@@ -8,7 +8,7 @@ class UploadErrorChecker
     if uploads.size > 5
       mail = Mail.new do
         from "webmaster@danbooru.donmai.us"
-        to "r888888888@gmail.com"
+        to "hennign@gmail.com"
         subject "[danbooru] Upload error count at #{uploads.size}"
         body uploads.map {|x| x.status}.join("\n")
       end

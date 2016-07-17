@@ -5,7 +5,7 @@ GIT
     diff-lcs (1.3)
 
 GIT
-  remote: https://github.com/r888888888/dtext_rb.git
+  remote: https://github.com/hennign/dtext_rb.git
   revision: 8afef10401aab15998b63ae735829fb37cfdf254
   specs:
     dtext_rb (1.0.8)
@@ -14,7 +14,7 @@ GIT
       rake-compiler (~> 0.9)
 
 GIT
-  remote: https://github.com/r888888888/ruby-imagespec.git
+  remote: https://github.com/hennign/ruby-imagespec.git
   revision: 2dab9811f4abb4fbaeea66feb42e388ba545b2d8
   branch: exif-fixes
   specs:
