@@ -144,7 +144,7 @@ module Danbooru
     end
 
     def member_comment_time_threshold
-      1.week.ago
+      2.minutes.ago
     end
 
     # The name of the server the app is hosted on.
@@ -221,7 +221,7 @@ module Danbooru
 
     # The number of posts displayed per page.
     def posts_per_page
-      20
+      40
     end
 
     def is_post_restricted?(post)
