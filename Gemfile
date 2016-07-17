@@ -53,10 +53,10 @@ gem 'twitter'
 gem 'aws-sdk', '~> 2'
 gem 'responders'
 gem 'highline'
-gem 'dtext_rb', :git => "https://github.com/hennign/dtext_rb.git", :require => "dtext"
+gem 'dtext_rb', :git => "https://github.com/r888888888/dtext_rb.git", :require => "dtext"
 
 # needed for looser jpeg header compat
-gem 'ruby-imagespec', :require => "image_spec", :git => "https://github.com/hennign/ruby-imagespec.git", :branch => "exif-fixes"
+gem 'ruby-imagespec', :require => "image_spec", :git => "https://github.com/r888888888/ruby-imagespec.git", :branch => "exif-fixes"
 
 group :production, :staging do
   gem 'unicorn', :platforms => :ruby
