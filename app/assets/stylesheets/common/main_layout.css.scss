@@ -26,8 +26,11 @@ div#page {
   }
 
   aside#sidebar {
-    width: 15em;
+    max-width: 225px;
+    width: 20%;
     float: left;
+    font-size: 12px;
+    word-wrap: break-word;
 
     h1 {
       font-size: $h3_size;
@@ -37,10 +40,29 @@ div#page {
       list-style-type: none;
     }
 
-    input[type=text] {
-      width: 10em;
+    input.secondary_search {
+      width: 180px;
+      height: 20px;
+	  border: 0px;
+	  background: url('images/site_search.jpg') center repeat-x;
     }
+    
+    input.secondary_search:hover {
+	  width: 180px;
+	  height: 20px;
+	  border: 0px;
+	  background: url('images/site_search2.jpg') center repeat-x;
+    }
+
+    input.search_list {
+	  width: 174px;
+	  border: 1px solid #e0e0e0;
+	  margin-bottom: 2px;
+	  padding: 2px;
+    }
+
   }
+
 
   aside#sidebar > section {
     margin-bottom: 1em;

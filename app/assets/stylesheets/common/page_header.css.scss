@@ -4,42 +4,89 @@
   display: none;
 }
 
-header#top {
-  h1 {
-    font-size: 2.5em;
-    margin: 5px 30px 0 30px;
-  }
+div#toprowbackground {
+    background-color: #0773fb;
+	background: linear-gradient(#328dfe, #0773fb);
+}
 
-  menu {
-    margin-top: -2px;
-    background: $menu_color;
-    padding: 6px 20px;
+div#apptitle {
+    font-weight: bold;
+    font-size: 1.375em;
+    display: inline;
+    vertical-align: middle;
+    font-family: tahoma, verdana, sans-serif;
+    margin-right: .5em;
+}
+div#apptitle a {
+    font-weight: bold;
+    font-size: 1.375em;
+}
 
-    form {
-      display: inline-block;
+div.header a {
+    color: #ffffff;
+    font-family: verdana, sans-serif;
+}
 
-      input {
-        width: 9.5em;
-      }
-    }
+menu {
+    display: inline-block;
+}
 
-    li {
-      margin: 0;
-      padding: 0;
-    }
+menu.main li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 .5em;
+    line-height: 4em;
+}
 
-    li a {
-      padding: 6px 10px;
-    }
-  }
+menu.main li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+menu.main li.current a {
+    display: inline-block;
+    background: #ffffff;
+    color: #006ffa;
+    padding: 0 0 0 1em;
+    font-weight: bold;
+    line-height: 4em;
+}
 
-  menu.main {
-    margin-top: 0;
-    background: none;
+div.center {
+    margin: 0 3em;
+    padding: 0;
+}
 
-    li.current a {
-      background: $menu_color;
-      font-weight: bold;
-    }
-  }
+
+
+div#apptitle a:hover {
+	color: #adecff;
+}
+
+div.submenu {
+    padding: .5em .5em .5em 0;
+    background: #3f3f3f;
+    font-family: verdana, sans-serif;
+    margin: 0;
+}
+
+div.submenu li a {
+    padding: .850em .5625em;
+    margin-right: 1em;
+}
+
+div.submenu a {
+    color: #ffffff;
+    padding: 1em .5em;
+}
+
+ul.flat-list2 li {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.flat-list2 li a {
+    padding: 1.3125em;
 }

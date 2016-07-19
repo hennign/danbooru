@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
   <title><%= yield :page_title %></title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -59,18 +59,24 @@
 
 </head>
 <body lang="en">
-  <header id="top">
+  <div class="header">
+  
     <%= render "news_updates/listing" %>
-
-    <h1><%= link_to Danbooru.config.app_name, "/" %></h1>
-    <span id="maintoggle"> ☰ </span> <!-- Maybe icon would be better, I'm not sure -->
-    <nav id="nav">
-      <%= render "layouts/main_links" %>
-      <%= yield :secondary_links %>
-    </nav>
+    <div id="toprowbackground">
+        <div id="toprow" class="center">
+            <div id="apptitle"><%= link_to Danbooru.config.app_name, "/" %></div>
+            <%= render "layouts/main_links" %>
+        </div>
+    </div>
+    
+    <div class="submenu">
+        <div class="center">
+            <%= yield :secondary_links %>
+        </div>
+    </div>
 
     <%= render "layouts/more_links" %>
-  </header>
+  </div>
 
   <div id="page">
     <% if CurrentUser.is_anonymous? && session[:started_at].is_a?(ActiveSupport::TimeWithZone) && session[:started_at] < 1.minute.ago && cookies[:hide_sign_up_notice].blank? %>
@@ -100,7 +106,5 @@
 
     <%= yield :layout %>
   </div>
-
-  <%= render "static/footer" %>
 </body>
 </html>
