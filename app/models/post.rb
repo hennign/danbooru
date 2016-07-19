@@ -294,10 +294,10 @@ class Post < ActiveRecord::Base
         raise ApprovalError.new("Post is locked and cannot be approved")
       end
 
-      if uploader_id == CurrentUser.id
-        errors.add(:base, "You cannot approve a post you uploaded")
-        raise ApprovalError.new("You cannot approve a post you uploaded")
-      end
+      # if uploader_id == CurrentUser.id
+        # errors.add(:base, "You cannot approve a post you uploaded")
+        # raise ApprovalError.new("You cannot approve a post you uploaded")
+      # end
 
       if approver_id == CurrentUser.id
         errors.add(:approver, "have already approved this post")
