@@ -12,12 +12,12 @@ module Danbooru
       if CurrentUser.safe_mode?
         "Safebooru"
       else
-        "Danbooru"
+        "Omnibooru"
       end
     end
 
     def description
-      "Find good anime art fast"
+      "Tag the world"
     end
 
     # The hostname of the server.
